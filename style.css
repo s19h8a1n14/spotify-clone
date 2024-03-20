@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+;/* importing fontfamily though url */
+body {
+    /* background-color:rgba(5, 251, 251, 0.353) ;  */
+
+    background-color: rgb(168, 235, 243);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: ubuntu initial;
+}
+
+nav ul{
+    list-style-type: none;/* dots will be gone*/
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 40px;
+    padding: 0 8px;
+}
+
+.brand{
+display: flex;
+align-items: center;
+font-size: 1.4rem;
+font-weight: bold;
+}
+
+
+
+.container{
+    height: 71vh;
+    /* background-color: black; */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin: 25px auto;
+    /* width: 80%; */
+    border-radius: 10px;
+    padding: 15px;
+    background-image:url('bg1.jpg');
+    background-size: cover;
+}
+/* 
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+} */
+
+.bottom{
+    font-family: ubuntu initial;
+    position: sticky;
+    /* bottom: 0; */
+    height: 85px;
+    background-color: black;
+    color: white;
+    display: flex; /*  to get progressbar into center*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/* to get song info under the progressbar*/
+}
+
+.icons {
+   margin-top: 10px;
+   /* background-color: blue; */
+}
+
+.icons i{
+    cursor: pointer;/* cursor becomes pointer when it goes there*/
+}
+
+#myprogressbar {
+    width: 80vw;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}  
+
+.songitemcontainer {
+  margin-top: 50px;
+  width: 600px;
+}
+
+.songitem{
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: antiquewhite;
+   color: black;
+    border-radius: 50px;
+    
+}
+
+.songitem img{
+   width: 50px;
+   height: 48px;
+   margin: 0 3px;
+   border-radius: 50px;
+}
+
+.songlist{
+    margin:auto 35px;
+}
+
+.timestamp{
+    margin: 0 5px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.range{
+   cursor: pointer;
+}
+
+.songinfo {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 10vw;
+}   
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.5 ease-in;
+}
+
