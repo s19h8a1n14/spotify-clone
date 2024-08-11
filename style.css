@@ -21,13 +21,14 @@ nav ul{
     list-style-type: none;/* dots will be gone*/
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 60px;
     background-color: black;
     color: white;
 }
 
 nav ul li{
-    padding: 0 12px;
+    padding: 0 15px;
+    font-size: 20px;
 }
 
 .brand img{
@@ -45,7 +46,7 @@ font-weight: bold;
 
 
 .container{
-    height: 71vh;
+    height: 68vh;
     /* background-color: black; */
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -70,7 +71,7 @@ div{
     font-family: ubuntu initial;
     position: sticky;
     /* bottom: 0; */
-    height: 85px;
+    height: 82px;
     background-color: black;
     color: white;
     display: flex; /*  to get progressbar into center*/
@@ -99,7 +100,7 @@ div{
 }  
 
 .songitemcontainer {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 600px;
 }
 
@@ -126,7 +127,8 @@ div{
 }
 
 .timestamp{
-    margin: 0 5px;
+    margin: 0 13px;
+    font-size: 20px;
 }
 
 .timestamp i{

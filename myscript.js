@@ -1,4 +1,4 @@
-console.log("Welcome to Spotify");
+// console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
@@ -122,7 +122,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
-
+    gif.style.opacity = 1;
 })
 
 document.getElementById('previous').addEventListener('click', ()=>{
@@ -138,4 +138,5 @@ document.getElementById('previous').addEventListener('click', ()=>{
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
+    gif.style.opacity = 1;
 })
